@@ -58,11 +58,7 @@ namespace EasuReproCRMTest.Hooks
             ExtentV3HtmlReporter htmlReporter = new ExtentV3HtmlReporter(path);
             htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
             extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);
-      
-            /*htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
-            extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);*///
+            extent.AttachReporter(htmlReporter);     
 
             LoginSteps.LoginCRMAplication();
         }
