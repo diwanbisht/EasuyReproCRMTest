@@ -39,7 +39,7 @@ namespace EasuReproCRMTest.StepDefinitions
         public void ThenICanSeeTheValueOfAsTheHeaderTitle(string validationMessage)
         {
             XrmApp.Entity.GetHeaderTitle().Should().Be(validationMessage);
-            XrmApp.Entity.GetHeaderTitle().Should().Contain(validationMessage);
+            //XrmApp.Entity.GetHeaderTitle().Should().Contain(validationMessage);
         }
     }
 }
